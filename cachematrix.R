@@ -53,7 +53,7 @@ cacheSolve <- function(y, ...) {
     # the cache
     data <- y$getCacheMatrix()
     inverse <- solve(data)
-    y$getCacheMatrixInverse(inverse)
+    y$cacheInverse(inverse)
     
     # return the inverse
     inverse
